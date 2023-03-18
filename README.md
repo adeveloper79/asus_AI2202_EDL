@@ -19,4 +19,6 @@ This is a guide to backup partitions through EDL for ASUS ZenFone 9. Please foll
 
 6. Let the script do its work. It will backup all the partitions and save them to the respective folders.
 
+7. After Backup is Finished reboot the phone by holding all three buttons for 10-20 seconds.
+
 Note: For now, only backup functionality is implemented in this tool.
