@@ -8,6 +8,8 @@ This is a guide to backup partitions through EDL for ASUS ZenFone 9. Please foll
    `adb reboot edl`
 
 2. Open the device manager on your computer and check the port number for 9008 mode.
+      
+      ![PORT](images/COM.png)
 
 3. Run the backup.bat file.
 
