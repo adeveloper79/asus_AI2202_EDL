@@ -45,7 +45,9 @@ echo #LUN 0
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\asusfw_b" --start_sector=267784 --lun=0 --num_sectors=16384 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\asusrecord" --start_sector=546312 --lun=0 --num_sectors=1 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\metadata" --start_sector=2774569 --lun=0 --num_sectors=4096 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
-.\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\expandmem" --start_sector=2909737 --lun=0 --num_sectors=786432 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
+
+echo Ignore expandmem 3GB partition
+# .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\expandmem" --start_sector=2909737 --lun=0 --num_sectors=786432 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 
 echo #LUN 1
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder1%\multiimgqti_a" --start_sector=1670 --lun=1 --num_sectors=8 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
