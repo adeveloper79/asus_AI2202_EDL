@@ -40,13 +40,11 @@ echo #LUN 0
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\gpt" --start_sector=125960 --lun=0 --num_sectors=256 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\sysinfo" --start_sector=126216 --lun=0 --num_sectors=256 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\ADF" --start_sector=126472 --lun=0 --num_sectors=8192 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
-.\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\APD" --start_sector=134664 --lun=0 --num_sectors=51200 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\ftm" --start_sector=185864 --lun=0 --num_sectors=65536 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\asusfw_a" --start_sector=251400 --lun=0 --num_sectors=16384 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\asusfw_b" --start_sector=267784 --lun=0 --num_sectors=16384 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\asusrecord" --start_sector=546312 --lun=0 --num_sectors=1 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\metadata" --start_sector=2774569 --lun=0 --num_sectors=4096 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
-.\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\logbuf" --start_sector=2778665 --lun=0 --num_sectors=131072 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder%\expandmem" --start_sector=2909737 --lun=0 --num_sectors=786432 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 
 echo #LUN 1
@@ -84,7 +82,6 @@ echo #LUN 4
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\limits" --start_sector=532093 --lun=4 --num_sectors=1 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\limits-cdsp" --start_sector=532094 --lun=4 --num_sectors=1 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\toolsfv" --start_sector=532095 --lun=4 --num_sectors=256 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
-.\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\logfs" --start_sector=532351 --lun=4 --num_sectors=2048 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\logdump" --start_sector=534399 --lun=4 --num_sectors=131072 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\storsec" --start_sector=665471 --lun=4 --num_sectors=32 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder4%\uefivarstore" --start_sector=665503 --lun=4 --num_sectors=128 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
