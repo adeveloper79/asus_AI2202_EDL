@@ -115,4 +115,7 @@ echo #LUN6
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder6%\asuskey5" --start_sector=1062 --lun=6 --num_sectors=256 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 .\fh_loader.exe --port=\\.\COM%port% --convertprogram2read --sendimage="%backup_folder6%\asuskey6" --start_sector=1318 --lun=6 --num_sectors=256 --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
 
+echo #Reboot Device
+.\fh_loader.exe --port=\\.\COM%port% --reset --showpercentagecomplete --zlpawarehost=1 --memoryname=ufs
+
 pause
